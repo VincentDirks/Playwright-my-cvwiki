@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "My first Playwright project",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "pw-test+ui": "npx playwright test --ui"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
