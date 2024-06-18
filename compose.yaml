@@ -1,0 +1,12 @@
+services:
+  playwright-my-cvwiki:
+    image: playwright-my-cvwiki
+    build: 
+      context: .
+      dockerfile: ./dockerfile
+    ports:
+      - "9323:9323"
+    command: npm run pw-test
+    volumes:
+      - ./playwright-report/:/app/playwright-report
+      - ./test-results/:/app/test-results
